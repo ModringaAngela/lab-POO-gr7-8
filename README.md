@@ -1,3 +1,4 @@
+
 # labPOO: gr7 & gr8
 
 - fiecare exercitiu (in afara celor care necesita importarea de fisiere) va fi scris intr-o functie separata
@@ -28,4 +29,3 @@ exemplu: lab1 -> people
 
    Build project -> Deschide folderul unde s-a generat jarul (out/artifacts/people_jar) -> Open in terminal <br>
    In terminal scrieti comanda: java -jar lab-POO-gr7-8.jar
- 
