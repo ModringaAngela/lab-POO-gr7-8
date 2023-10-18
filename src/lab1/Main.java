@@ -20,5 +20,6 @@ public class Main {
         int i = rand.nextInt(n);
         int i2 = i * 2;
         System.out.println(i2);
+        System.out.println("Din new branch");
     }
 }
