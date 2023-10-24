@@ -1,12 +1,44 @@
 package lab3;
 
+import java.math.BigInteger;
+import java.util.List;
+import java.util.SortedMap;
+
 public class Main {
 
     public static void main(String[] args) {
-        operatori();
+       // operatori();
+       // method2(8);
+
+    etic:    for(int i = 2; i < 6; i++){
+            for (int j = 5; j <8; j++){
+                System.out.printf("i=" + i);
+                System.out.println(j);
+                if(j > 6){
+                    continue etic;
+                }
+
+                //2,5
+                //2,6
+                //2, 7
+                //3, 5
+            }
+        }
+    }
+
+    public static void method2(int t){
+        int a = 5;
+        long l = a;
+        int b = (int)l;
+    }
+    public static void method1(){
+        int a; //declarare
+        a = 5; //initialzare
+        a = a+1; // atribuire
     }
 
     public static void operanzi() {
+        List<String > list;
         //variabile locale de tipul int
         int a = 25;
         int b = 6;
@@ -31,15 +63,28 @@ public class Main {
         boolean notA = !bool1;
 
         //operatori relationali
+        System.out.println("floats:");
         System.out.println(0.1 + 0.1 == 0.2);
         System.out.println(0.1 + 0.1 + 0.1 == 0.3);
 
         //==, equals, compareTo
+        System.out.println("Comparare");
         Calculator c1 = new Calculator();
         Calculator c2 = new Calculator();
         Calculator c3 = c2;
         System.out.println(c1 == c2);
         System.out.println(c2 == c3);
+
+        Calculator c4 = new Calculator("a");
+        Calculator c5 = new Calculator("b");
+        Calculator c6 = new Calculator("a");
+        System.out.println("Equals");
+        System.out.println(c4==c6);
+        System.out.println(c4.equals(c6));
+
+        System.out.println("Instance of");
+        System.out.println("instanceof1 " + (c1 instanceof Calculator));
+        System.out.println("instanceof1  " + (c1 instanceof Object));
 
         //articol: https://dzone.com/articles/how-do-i-compare-strings-in-java
         String name1 = "Mickey Mouse";
@@ -48,7 +93,8 @@ public class Main {
         String name4 = "Mickey Mouse";
         String name5 = "Mickey" + " Mouse";
         System.out.println(name1 == "Mickey Mouse");
-        System.out.println(name1 == name2);
+        System.out.println("AAAAA");
+        System.out.println(name1 == name5);
         System.out.println(name1 == name3);
         System.out.println(name1 == name4);
 
@@ -81,11 +127,13 @@ public class Main {
         System.out.println("varsta = " + varsta);
         System.out.println("gen = " + gen);
 
+        System.out.println("NUMERE");
         int nr = 5;
         System.out.println(nr++);
         System.out.println(nr);
         System.out.println(++nr);
 
+        boolean b = 9 <= 7;
         int n = 6;
         int m = 6;
         //post increment

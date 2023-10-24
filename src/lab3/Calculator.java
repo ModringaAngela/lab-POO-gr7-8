@@ -1,10 +1,13 @@
 package lab3;
 
-public class Calculator {
+import java.util.HashSet;
+import java.util.Set;
+
+public class Calculator implements Comparable<Calculator>{
     //variabila instanta
     private String brand;
     //variabila clasa (statica)
-    private static final int PERCENTAGE = 100;
+    public static final int PERCENTAGE = 100;
 
     //constructor cu parametru
     public Calculator(String brand) {
@@ -38,5 +41,32 @@ public class Calculator {
 
     public String getBrand() {
         return this.brand;
+    }
+
+    // Overriding equals() to compare two Complex objects
+    @Override
+    public boolean equals(Object o) {
+
+        // If the object is compared with itself then return true
+        if (o == this) {
+            return true;
+        }
+
+        /* Check if o is an instance of Complex or not
+          "null instanceof [type]" also returns false */
+        if (!(o instanceof Calculator)) {
+            return false;
+        }
+
+        // typecast o to Complex so that we can compare data members
+        Calculator c = (Calculator) o;
+
+        // Compare the data members and return accordingly
+        return c.brand.equals(this.brand);
+    }
+
+    @Override
+    public int compareTo(Calculator calculator) {
+        return 0;
     }
 }
