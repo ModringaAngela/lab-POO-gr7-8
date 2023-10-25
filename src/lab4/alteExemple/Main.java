@@ -13,8 +13,9 @@ public class Main {
         /*
          eroare de compilare
          -> private: accesibila doar din cadrul clasei care o declare
+                 //methods.privateMethod();
          */
-        //methods.privateMethod();
+
 
     }
 }

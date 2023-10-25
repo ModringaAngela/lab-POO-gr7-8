@@ -4,6 +4,10 @@ import lab4.alteExemple.Methods;
 
 public class MethodsChild extends Methods {
 
+    public MethodsChild(){
+        super();
+    }
+
     void seeCalls(){
         publicMethod();
         publicMethod(1);
@@ -12,4 +16,11 @@ public class MethodsChild extends Methods {
         //eroare de compilare (default method e vizibila doar din cadrul aceluiasi packet)
         //defaultMethod();
     }
+
+//    public static void main(String[] args) {
+//        Methods methods = new Methods();
+//        methods.publicMethod();
+//        methods.protectedMethod();
+//    }
+
 }

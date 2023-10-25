@@ -46,6 +46,7 @@ public class Methods {
     void defaultMethod(){
         System.out.println("Afisare din defaultMethod");
     }
+
     private void privateMethod(){
         System.out.println("Afisare din privateMethod");
     }

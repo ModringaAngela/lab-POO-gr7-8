@@ -6,8 +6,8 @@ package lab4.indrumator;
 public class Point {
     private int x; //variabila instanta (field)
     private int y; //variabila instanta (field)
-    private static final int X = 0; //variabila de clasa (statica)
-    private static final int Y = 0;  //variabila de clasa (statica)
+    private static final int CENTER_X = 0; //variabila de clasa (statica)
+    private static final int CENTER_Y = 0;  //variabila de clasa (statica)
 
     //============ Constructor cu parametri
     public Point(int px, int py) {
@@ -17,7 +17,7 @@ public class Point {
 
     //============ Constructor fara parametri
     public Point() {
-        this(X, Y); // Apeleaza constructorul cu parametri; creează punctul (0, 0)
+        this(CENTER_X, CENTER_Y); // Apeleaza constructorul cu parametri; creează punctul (0, 0)
     }
 
     /*
