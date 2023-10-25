@@ -5,6 +5,7 @@ public class NewClass {
     int j;
 
     public NewClass(int i){
+        this(i, 3);
         this.i =i;
     }
 

@@ -26,6 +26,10 @@ public class Person {
     //constructor
     public Person(String name) { this.name = name; }
 
+    public Person() {
+
+    }
+
     //getter
     public String getName() { return this.name; }
 

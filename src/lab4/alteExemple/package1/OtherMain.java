@@ -16,9 +16,22 @@ public class OtherMain {
         -> private: accesibila doar din cadrul clasei care o declare
         methods.protectedMethod();
         methods.defaultMethod();
-        methods.privateMethod();
          */
 
+        //va arunca eroare
+        System.out.println(divide(1,0));
 
+        System.out.println("AAAAAA");
+
+        MethodsChild.method1();
+        MethodsChild nume = new MethodsChild();
+        nume.method2();
+        //apelarea unei metode statice pe un obiect
+        nume.method1();
+    }
+
+    //clauza throws la o metoda
+    static int divide(int i , int j) throws ArithmeticException{
+            return i/j;
     }
 }

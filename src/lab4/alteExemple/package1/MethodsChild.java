@@ -23,4 +23,12 @@ public class MethodsChild extends Methods {
 //        methods.protectedMethod();
 //    }
 
+    public static void method1(){
+
+    }
+
+    public void method2(){
+
+    }
+
 }

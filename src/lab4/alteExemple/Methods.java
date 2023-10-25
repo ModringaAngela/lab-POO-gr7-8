@@ -50,5 +50,6 @@ public class Methods {
     private void privateMethod(){
         System.out.println("Afisare din privateMethod");
     }
+
 }
 
