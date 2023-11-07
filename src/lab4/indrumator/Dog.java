@@ -18,6 +18,6 @@ class Dog {
         Dog d = new Dog();
         Dog d2 = new Dog();
         System.out.println("Field variable on object d is now " + d.dogCount2);
-        System.out.println("Field variable is on object d2 is now" + d2.dogCount2);
+        System.out.println("Field variable is on object d2 is now " + d2.dogCount2);
     }
 }
