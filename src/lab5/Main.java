@@ -79,11 +79,26 @@ public class Main {
         System.out.printf("Dupa metoda schimbaValoareDeLaIndex a[%s] = %s\n", index, a[index]);
 
         System.out.println();
-        modificaArrayul(a);
+        realocaArrayul(a);
         System.out.println("Dupa apelul metodei modificaArrayul, a contine: ");
         for (int v : a) {
             System.out.print(v + " ");
         }
+
+        int[] arrNew = new int[] {1,1,1};
+        System.out.println();
+        System.out.print("Arrayul initial e: ");
+        for (int v : arrNew){
+            System.out.printf(v + " ");
+        }
+        System.out.println();
+        schimbaTotArrayul(arrNew);
+        System.out.print("Arrayul schimbat e: ");
+        for (int v : arrNew){
+            System.out.printf(v + " ");
+        }
+        //Arrays.stream(arrNew).forEach(e -> System.out.printf(e + " "));
+
     }
 
     public static void schimbaValoareDeLaIndex(int[] a, int i, int newVal) {
@@ -91,7 +106,23 @@ public class Main {
         System.out.printf("Noua valoare pentru a[%s] e %s\n", i, a[i]);
     }
 
-    public static void modificaArrayul(int[] a) {
+    public static void schimbaTotArrayul(int[]a){
+       int n = 3;
+        for (int i=0; i<a.length;i++){
+            a[i] = n++;
+        }
+        //nu are efect
+//        for (int v : a){
+//            v = n++;
+//        }
+        System.out.print("Arrayul in metoda e: ");
+        for (int v : a){
+            System.out.printf(v + " ");
+        }
+        System.out.println("\n");
+    }
+
+    public static void realocaArrayul(int[] a) {
         a = new int[]{4, 3, 6};
         System.out.println("In interiorul metodei modificaArrayul, a contine: ");
         for (int v : a) {
@@ -133,8 +164,11 @@ public class Main {
      */
     public static void main(String[] args) {
 
+        //tablouriDeInt();
+        System.out.println("\n\n\n");
+
         //declararea arrayului
-        int[] a; // stil Java -- bun
+        int[] a = new int[10];// stil Java -- bun
         int b[]; // stil C -- legal, dar nerecomandat
         //decomenteaza linia urmatoare pentru a vedea compilarea, comenteaza la loc dupa aceea
         //int c[200]; //ilegal
@@ -145,11 +179,13 @@ public class Main {
         System.out.println();
 
         //metode de biblioteca
-        int[] arr = new int[]{2, 4, 6, 1, 10};
+        System.out.println("BIBILIOTECA");
+        int[] arr = new int[]{1, 2, 4, 6, 10, 11};
         List<int[]> list = Arrays.asList(arr); //putem folosi int[] in cadrul clasei List, pentru ca e un obiect
         String st = Arrays.toString(arr);
-        int key = 6;
-        int rez = Arrays.binarySearch(arr, 6); //ne spune indexul cheii cautate
+        System.out.println(st);
+        int key = 11;
+        int rez = Arrays.binarySearch(arr, key); //ne spune indexul cheii cautate
         System.out.printf("Indexul lui %s in arr este %s", key, rez);
         System.out.println();
 
@@ -162,7 +198,7 @@ public class Main {
         Arrays.stream(toFill).forEach(e -> System.out.print(e + " "));
         System.out.println();
 
-        int[] arr1 = new int[]{1,2,3};
+        int[] arr1 = new int[]{1,2,3}; //conteaza ordinea elementelor
         int[] arr2 = new int[]{1,2,3};
         System.out.println("Compararea cu equals da: " + Arrays.equals(arr1, arr2));
         System.out.println("Compararea cu == da: " + (arr1==arr2));
@@ -179,11 +215,18 @@ public class Main {
 
         System.out.println("\n");
 
+        int[] newArr = new int[4];
+        System.arraycopy(c, 0, newArr, 0, 4);
+        Arrays.stream(newArr).forEach(e -> System.out.print(e + " "));
+        System.out.println();
+
         //tablou bidimensional
         int[][] board = new int[3][3];
         int[][] board2 = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
         int[][] board3 = new int[][]{{1}, {4, 5}, {7, 8, 9}};
         System.out.println(board2.length);
         System.out.println(board2[0].length);
+
+
     }
 }
