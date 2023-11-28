@@ -4,7 +4,7 @@ public class Child extends Parent {
 
     int _y;
 //    public Child(int y) { //GRESIT(eroare de compilare), este nevoie de apel explicit la super
-    //compilatorul incearca sa apeleze super() care nu exista
+//    //compilatorul incearca sa apeleze super() care nu exista
 //        _y = y;
 //    }
 

@@ -8,6 +8,11 @@ public class Base {
         return field;
     }
 
+    public int getField2(int i, float f) {
+        return field;
+    }
+
+
     //suprascrierea metodei equals
     @Override
     public boolean equals(Object o) {

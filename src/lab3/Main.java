@@ -7,6 +7,8 @@ import java.util.SortedMap;
 public class Main {
 
     public static void main(String[] args) {
+
+        operatori();
        // operatori();
        // method2(8);
 
@@ -78,6 +80,7 @@ public class Main {
         Calculator c4 = new Calculator("a");
         Calculator c5 = new Calculator("b");
         Calculator c6 = new Calculator("a");
+        Calculator c7 = c6;
         System.out.println("Equals");
         System.out.println(c4==c6);
         System.out.println(c4.equals(c6));

@@ -11,15 +11,12 @@ public class Main {
         Child c2 = new Child(2);
         Child c3 = new Child("cd");
         Child c4 = new Child();
+        Child c5 = new Child(5, "a", "b");
         System.out.println(c);
         System.out.println(c2);
         System.out.println(c3);
         System.out.println(c4);
-    }
-
-    public static void exempluMyWindow() {
-        MyWindow w = new MyWindow("a");
-        System.out.println(w.getTitle());
+        System.out.println(c5);
     }
 
     public static void exempluSub() {
@@ -65,6 +62,9 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        exempluSub();
+        exempluParentChild();
+        System.out.printf("rezultatul %s + %s este = %s\n", 3, 4, 7);
+        System.out.println();
+
     }
 }
