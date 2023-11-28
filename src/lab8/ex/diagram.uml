@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="-145.0" y="51.5">lab8.ex.I2</node>
+    <node x="-153.0" y="117.0">lab8.ex.C2</node>
+    <node x="-255.0" y="117.0">lab8.ex.C</node>
+    <node x="-251.5" y="51.5">lab8.ex.I3</node>
+    <node x="-51.0" y="34.0">lab8.ex.Main2</node>
+    <node x="-149.0" y="217.5">lab8.ex.I4</node>
+    <node x="-259.0" y="200.0">lab8.ex.C3</node>
+    <node x="-246.0" y="-14.0">lab8.ex.I</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="lab8.ex.C" target="lab8.ex.I2" relationship="REALIZATION">
+      <point x="0.0" y="-31.5" />
+      <point x="-219.0" y="107.0" />
+      <point x="-113.0" y="107.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="lab8.ex.C" target="lab8.ex.I3" relationship="REALIZATION">
+      <point x="0.0" y="-31.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="lab8.ex.C2" target="lab8.ex.I2" relationship="REALIZATION">
+      <point x="0.0" y="-31.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="lab8.ex.C3" target="lab8.ex.C" relationship="GENERALIZATION">
+      <point x="0.0" y="-31.5" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="lab8.ex.I2" target="lab8.ex.I" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="-113.0" y="41.5" />
+      <point x="-219.0" y="41.5" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="lab8.ex.I3" target="lab8.ex.I" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.5" showDependencies="false" x="-94.99999999999994" y="134.50000000000003" />
+  <SelectedNodes>
+    <node>lab8.ex.I4</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
