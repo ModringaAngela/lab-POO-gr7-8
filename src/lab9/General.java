@@ -53,7 +53,12 @@ public class General {
             throw new IOException();
         }catch (IOException e){
             e.printStackTrace();
+        }catch (Exception e){
+
+        }finally {
+
         }
+
     }
 
     static void fillInStackExample(){
@@ -62,6 +67,15 @@ public class General {
         }
         catch(ArithmeticException e) {
             throw (ArithmeticException)e.fillInStackTrace();
+        }
+    }
+
+    static void aruncaCheckedExceptionSiPrindeAlta(){
+        try {
+            //throw new IOException("IO ex");
+        }
+        catch(ArithmeticException e) {
+            e.printStackTrace();
         }
     }
 
@@ -76,8 +90,16 @@ public class General {
 //        System.out.println("Apelul lui printStackExample");
 //        printStackExample();
 
+
+        try {
+            rearuncareaUneiExceptiiChecked();
+        } catch (IOException e) {
+            System.out.println("Prinsa");
+        }
+
+
         System.out.println("Apelul lui fillInStackExample");
-        fillInStackExample();
+//        fillInStackExample();
 
     }
 }

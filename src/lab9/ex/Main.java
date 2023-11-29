@@ -12,8 +12,8 @@ public class Main {
 
         System.out.println();
 
-        int poz2 = 10;
-        ThrowsExample e2 = new ThrowsExample(stringExample.toCharArray(), 1);
+        int poz2 = 1;
+        ThrowsExample e2 = new ThrowsExample(stringExample.toCharArray(), poz2);
         System.out.printf("Citim pana la pozitia %s\n", poz2);
         int l2 = e2.getLength();
         System.out.println("pe e2 getLength returneaza " + l2);
