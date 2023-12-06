@@ -26,6 +26,7 @@ public class General {
             cap(0);
         }
         catch(ArithmeticException e) {
+            System.out.println("ahferhf");
             throw e;
         }
     }
@@ -37,8 +38,9 @@ public class General {
      */
     static void rearuncareaUneiExceptiiChecked() throws IOException {
         try{
-            throw new IOException();
+            throw new IOException("exceptie aruncata aici");
         }catch (IOException e){
+            System.out.println("Shedhi");
             throw e;
         }
     }
@@ -53,9 +55,7 @@ public class General {
             throw new IOException();
         }catch (IOException e){
             e.printStackTrace();
-        }catch (Exception e){
-
-        }finally {
+        }catch (Exception e) {
 
         }
 
@@ -94,8 +94,18 @@ public class General {
         try {
             rearuncareaUneiExceptiiChecked();
         } catch (IOException e) {
-            System.out.println("Prinsa");
+            System.out.println(e.getMessage());
         }
+
+        System.out.println("A");
+        System.out.println("B");
+        System.out.println("C");
+//        catch (ArithmeticException e){
+//
+//        }
+//        finally {
+//            System.out.println("Printeaza asta");
+//        }
 
 
         System.out.println("Apelul lui fillInStackExample");

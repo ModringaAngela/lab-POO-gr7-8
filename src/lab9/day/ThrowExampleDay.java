@@ -16,7 +16,7 @@ public class ThrowExampleDay
     {
         //care e diferenta dintre v1() si v2()
         v1();
-        v2();
+        //v2();
     }
 
     static void v1(){
