@@ -6,8 +6,23 @@ public class MapEx {
 
     static void exempleCuMap() {
         Map<String, String> map = new HashMap<>();
+        System.out.println(map.size());
+        Collection<String> l = new ArrayList<>();
+        Collection<Object> c = new ArrayList<>();
+        c.add("1");
+        c.add(1);
+
+        Collection<List<String>> a = new ArrayList<>();
+        a.add(List.of("A", "A"));
+
+        Collection<Integer> l2 = new ArrayList<>();
+        l2.add(2);
         Map<String, String> map2 = new HashMap<>(7);
         Map<String, String> map3 = new HashMap<>(7, 1);
+
+        Map<String, String> map4 = new HashMap<>(map3);
+        Map<String , String> map5 = map3;
+
         System.out.println("Initial size " + map.size());
         /*
             by default capacitatea e 16 si load factorul e 0.75
@@ -38,6 +53,10 @@ public class MapEx {
         System.out.println("Dupa modificare, elementele din map sunt");
         System.out.println(map.entrySet());
         System.out.println();
+
+        System.out.println(map.values());
+        System.out.println(map.keySet());
+        map.remove("Key12");
 
         //daca dam valoare la constructor, aceea e capacitatea initiala
         //si aici, max size != capacitate (capacitatea initiala setata nu inseamna ca doar atatea elemente putem pune)
@@ -101,7 +120,9 @@ public class MapEx {
     public static void main(String[] args) {
         //exempleCuMap();
 
-        orderedVsUnorderedMaps();
+        //orderedVsUnorderedMaps();
+
+        exempleCuMap();
     }
 
 }

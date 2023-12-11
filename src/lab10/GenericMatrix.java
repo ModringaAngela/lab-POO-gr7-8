@@ -1,6 +1,6 @@
 package lab10;
 
-public abstract class GenericMatrix<E extends Number> {
+public abstract class GenericMatrix<E> {
     /**
      * Metoda abstracta pentru adunarea a doua elemente ale matricelor
      */

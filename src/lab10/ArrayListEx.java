@@ -28,31 +28,47 @@ public class ArrayListEx {
         for (int i = 0; i < alist.size(); i++) {
             System.out.println(alist.get(i));
         }
+
+        for (String s : alist){
+            System.out.println(s);
+        }
     }
 
     static void listEx(){
         List<String> l1 = new ArrayList<>();
+        l1.add("F");
         l1.add("A");
         l1.add("B");
         l1.add("C");
         l1.add("D");
         l1.add("E");
+
         List<String> l2 = List.of("A", "B", "C", "D", "E");
+       // l2.remove("A");
         List<String> l3 = new ArrayList<>(List.of("A", "B", "C", "D", "E"));
 
-        System.out.println("L1");
-        doTheWork(l1);
-        System.out.println();
+        l3.remove("A");
+        l1.sort(String.CASE_INSENSITIVE_ORDER);
 
-        System.out.println("L2");
-        doTheWork(l2);
-        System.out.println();
+        System.out.println(Collections.min(l1));
+        System.out.println(Collections.max(l2));
+        System.out.println(l1);
+        Collections.sort(l1);
+        System.out.println(l1);
 
-        System.out.println("L3");
-        doTheWork(l3);
-        System.out.println();
-
-        List<List<String>> a = new ArrayList<>();
+//        System.out.println("L1");
+//        doTheWork(l1);
+//        System.out.println();
+//
+//        System.out.println("L2");
+//        doTheWork(l2);
+//        System.out.println();
+//
+//        System.out.println("L3");
+//        doTheWork(l3);
+//        System.out.println();
+//
+//        List<List<String>> a = new ArrayList<>();
     }
 
     static void doTheWork(List<String> l){
@@ -65,7 +81,9 @@ public class ArrayListEx {
         l.clear();
     }
     public static void main(String[] args) {
-        listEx();
+        //listEx();
+        //asaDaCuIterator();
 
+        listEx();
     }
 }
