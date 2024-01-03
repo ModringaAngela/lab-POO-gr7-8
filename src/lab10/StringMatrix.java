@@ -4,7 +4,7 @@ package lab10;
     Tipul de date folosit trebuie sa extinga Number
     de aceea GenericMatrix<String> da eroare
  */
-public class StringMatrix {}
+public class StringMatrix{}
 // extends GenericMatrix<String>{
 //    @Override
 //    protected String add(String o1, String o2) {
