@@ -18,7 +18,7 @@ public class Student implements Cloneable{
 	}
 
 	public Student(Student x, boolean deep) { // copy constructor
-		this.nume = x.nume; // string este mutabil oricum
+		this.nume = x.nume; // string este imutabil oricum
 		if (deep){
 			/*	se creaza un obiect de tipul masina nou
 				=> modificarile facute pe obiectul masina al copiei
